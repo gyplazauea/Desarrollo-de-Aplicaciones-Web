@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana 3 - HTML5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Proyecto HTML5 - Semana 3</h1>
+    <p>
+      Esta página web fue desarrollada para practicar el uso de
+      <strong>HTML5</strong> y <em>etiquetas semánticas</em>.
+    </p>
+  </header>
+
+  <!-- NAVEGACIÓN -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#multimedia">Multimedia</a></li>
+      <li><a href="#tabla">Tabla</a></li>
+      <li><a href="#formulario">Formulario</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio">
+      <h2>Introducción</h2>
+      <p>
+        En esta sección se presenta información general del proyecto.
+        El objetivo es aplicar una correcta
+        <strong>estructura del documento</strong> usando HTML5.
+      </p>
+
+      <article>
+        <h3>Objetivo del proyecto</h3>
+        <p>
+          Demostrar el uso de encabezados, listas, enlaces, tablas,
+          formularios y contenido multimedia.
+        </p>
+
+        <h3>Lista ordenada</h3>
+        <ol>
+          <li>Crear la estructura del proyecto</li>
+          <li>Escribir el código HTML</li>
+          <li>Aplicar estilos con CSS</li>
+        </ol>
+
+        <h3>Lista desordenada</h3>
+        <ul>
+          <li>Uso de etiquetas semánticas</li>
+          <li>Inserción de imagen y video</li>
+          <li>Publicación en GitHub Pages</li>
+        </ul>
+
+        <p>
+          Más información en:
+          <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+            Documentación oficial de HTML
+          </a>
+        </p>
+      </article>
+    </section>
+
+    <!-- SECCIÓN MULTIMEDIA -->
+    <section id="multimedia">
+      <h2>Multimedia</h2>
+
+      <article>
+        <h3>Imagen</h3>
+        <img src="assets/img/imagen1.jpg" alt="Imagen relacionada con desarrollo web">
+      </article>
+
+      <article>
+        <h3>Video</h3>
+        <video controls>
+          <source src="assets/video/video1.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento video.
+        </video>
+      </article>
+    </section>
+
+    <!-- SECCIÓN TABLA -->
+    <section id="tabla">
+      <h2>Tabla de tecnologías</h2>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Tecnología</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5</td>
+            <td>Estructura del sitio web</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Diseño y estilos</td>
+          </tr>
+          <tr>
+            <td>GitHub Pages</td>
+            <td>Publicación del sitio</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECCIÓN FORMULARIO -->
+    <section id="formulario">
+      <h2>Formulario de contacto</h2>
+
+      <form>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 - Proyecto académico HTML5</p>
+  </footer>
+
+</body>
+</html>
