@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema Web</title>
+</head>
+<body>
+
+<h2>Login</h2>
+
+<div id="login">
+Usuario: <input id="user"><br>
+Password: <input type="password" id="pass"><br>
+<button onclick="login()">Ingresar</button>
+</div>
+
+<div id="sistema" style="display:none;">
+<h2>Productos</h2>
+
+<input id="producto" placeholder="Producto">
+<button onclick="agregar()">Agregar</button>
+
+<ul id="lista"></ul>
+</div>
+
+<script>
+let productos = [];
+
+function login() {
+    let u = document.getElementById("user").value;
+    let p = document.getElementById("pass").value;
+
+    if (u === "admin" && p === "1234") {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("sistema").style.display = "block";
+    } else {
+        alert("Datos incorrectos");
+    }
+}
+
+function agregar() {
+    let nombre = document.getElementById("producto").value;
+    productos.push(nombre);
+    mostrar();
+}
+
+function eliminar(i) {
+    productos.splice(i, 1);
+    mostrar();
+}
+
+function mostrar() {
+    let lista = document.getElementById("lista");
+    lista.innerHTML = "";
+
+    productos.forEach((p, i) => {
+        lista.innerHTML += `<li>${p} <button onclick="eliminar(${i})">Eliminar</button></li>`;
+    });
+}
+</script>
+
+</body>
+</html>
